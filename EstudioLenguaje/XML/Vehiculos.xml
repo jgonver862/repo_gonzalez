@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos>
+    <vehiculo id="1">
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <tipo></tipo>
+        <peso></peso>
+        <anio-fabricacion></anio-fabricacion>
+        <longitud></longitud>
+    </vehiculo>
+    <vehiculo id="2">
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <tipo></tipo>
+        <peso></peso>
+        <anio-fabricacion></anio-fabricacion>
+        <longitud></longitud>
+    </vehiculo>
+    <vehiculo id="3">
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <tipo></tipo>
+        <peso></peso>
+        <anio-fabricacion></anio-fabricacion>
+        <longitud></longitud>
+    </vehiculo>
+    <vehiculo id="4">
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <tipo></tipo>
+        <peso></peso>
+        <anio-fabricacion></anio-fabricacion>
+        <longitud></longitud>
+    </vehiculo>
+    <vehiculo id="5">
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <tipo></tipo>
+        <peso></peso>
+        <anio-fabricacion></anio-fabricacion>
+        <longitud></longitud>
+    </vehiculo>
+    <vehiculo id="6">
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <tipo></tipo>
+        <peso></peso>
+        <anio-fabricacion></anio-fabricacion>
+        <longitud></longitud>
+    </vehiculo>
+    <vehiculo id="7">
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <tipo></tipo>
+        <peso></peso>
+        <anio-fabricacion></anio-fabricacion>
+        <longitud></longitud>
+    </vehiculo>
+    <vehiculo id="8">
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <tipo></tipo>
+        <peso></peso>
+        <anio-fabricacion></anio-fabricacion>
+        <longitud></longitud>
+    </vehiculo>
+    <vehiculo id="9">
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <tipo></tipo>
+        <peso></peso>
+        <anio-fabricacion></anio-fabricacion>
+        <longitud></longitud>
+    </vehiculo>
+    <vehiculo id="10">
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <tipo></tipo>
+        <peso></peso>
+        <anio-fabricacion></anio-fabricacion>
+        <longitud></longitud>
+    </vehiculo>
+</vehiculos>
