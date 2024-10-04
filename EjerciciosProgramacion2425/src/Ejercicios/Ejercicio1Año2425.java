@@ -1,4 +1,4 @@
-package BeforeProjects;
+package Ejercicios;
 
 public class Ejercicio1Año2425 {
 
