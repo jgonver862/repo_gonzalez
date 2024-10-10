@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servidor id="1">
+    <programa_utilizado>Apache</programa_utilizado>
+    <!-- Solo puede ser Apache o IIS.-->
+    <fecha_creacion>10/04/2023</fecha_creacion>
+    <fecha_ultima_actualizacion>15/04/2024</fecha_ultima_actualizacion>
+    <hosting>
+        <nombre_companiia>IONOS</nombre_companiia>
+        <precio_mensual tipo="€">0,99</precio_mensual>
+        <!-- precio_mensual solo puede ser un valor decimal -->
+    </hosting>
+    <servicio_web>
+        <servidor_virtual id="1">
+            <codigo_id>246-BDFHJ</codigo_id>
+            <!-- El codigo debe tener 3 numeros entre 1 y 9, un guion y 5 letras mayusculas -->
+            <dominio>https://www.ionos.es/host/246-BDFHJ</dominio>
+            <!-- En el dominio hay que meter la direccion URL del servidor virtual-->
+            <directorio>C:/Users/Shadow/servidor_web.html</directorio>
+            <modo_seguro>false</modo_seguro>
+            <!-- Solo puede tener un valor true o false -->
+            <incidencias/>
+            <!-- En <incidencias></incidencias> hay que guardar <descripcion></descripcion> <solucion_adoptada></solucion_adoptada>-->
+        </servidor_virtual>
+    </servicio_web>
+</servidor>

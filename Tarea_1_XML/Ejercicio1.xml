@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda-telefono>
+    <contacto id="1">
+        <nombre>Victoria</nombre>
+        <apellido>Escobar Matamoros<apellido>
+        <direccion>Pamplona, Navarra, España</direccion>
+        <telefonos>
+            <telefono tipo="fijo">910 042 003</telefono>
+            <telefono tipo="movil">615 041 972</telefono>
+        </telefonos>
+    </contacto>
+    <contacto id="2">
+        <nombre>Segismundo</nombre>
+        <apellido>Gutiérrez Grillo<apellido>
+        <direccion>Villarreal, Castellón, España</direccion>
+        <telefonos>
+            <telefono tipo="fijo">902 150 600</telefono>
+        </telefonos>
+    </contacto>
+    <contacto id="3">
+        <nombre>Trinidad</nombre>
+        <apellido>Arrubal Pascual<apellido>
+        <direccion>Chiclana de la Frontera, Cádiz, España</direccion>
+        <telefonos>
+            <telefono tipo="movil">630 051 971</telefono>
+        </telefonos>
+    </contacto>
+    <contacto id="4">
+        <nombre>Torcuato</nombre>
+        <apellido>Márquez Fernández<apellido>
+        <direccion>Paterna, Valencia, España</direccion>
+        <telefonos>
+            <telefono tipo="movil">620 081 937</telefono>
+            <telefono tipo="trabajo">613 031 998</telefono>
+        </telefonos>
+    </contacto>
+</agenda-telefono>

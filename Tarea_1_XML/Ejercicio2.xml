@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulo id="DAW">
+    <nombre>Lenguajes de Marcas y Sistemas de Gestión de Información</nombre>
+    <horas_por_semana tipo="obligatorio">3</horas_por_semana>
+    <fecha_inicio>16/09/2024</fecha_inicio>
+    <fecha_fin>20/06/2025</fecha_fin>
+    <estudiantes>
+        <estudiante id="1">
+            <nombre>Ana</nombre>
+            <apellido>Fernández Gutiérrez</apellido>
+            <dni>16965696L</dni>
+            <telefono>789654321<telefono>
+            <correo_electronico>ana.fdezgtrrez@hotmail.com</correo_electronico>
+            <direccion>Calle El Percebe, 13, Chipiona</direccion>
+            <codigo_postal>11550</codigo_postal>
+            <ausencias/>
+            <calificacion/>
+            <!-- Al no tener informacion sobre ausencias o calificaciones, no hay que ponerlo.-->
+        </estudiante>
+        <estudiante id="2">
+            <nombre>Pepe</nombre>
+            <apellido>Grillo Márquez</apellido>
+            <dni>98765432H</dni>
+            <telefono>656566555<telefono>
+            <correo_electronico>yhyh@yahoo.com,</correo_electronico>
+            <direccion>Avenida El Pez, 5, Rota</direccion>
+            <codigo_postal>11520</codigo_postal>
+            <ausencias>0</ausencias>
+            <!-- Aqui hay que poner el numero de ausencias, en este caso, al no tener, seria 0-->
+            <calificacion>Aprobado</calificacion>
+            <!-- En calificacion hay que poner si ha aprobado o ha suspendido -->
+        </estudiante>
+    </estudiantes>
+</modulo>
