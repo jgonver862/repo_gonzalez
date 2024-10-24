@@ -1,4 +1,4 @@
-package Ejercicios;
+package EjerciciosUD1_UD2;
 
 public class HolaMundo {
 

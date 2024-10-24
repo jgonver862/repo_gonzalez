@@ -1,4 +1,4 @@
-package Ejercicios;
+package EjerciciosUD1_UD2;
 
 import java.util.Scanner;
 
@@ -33,7 +33,7 @@ public class EscribirSimbolo {
 			}
 
 		} while (error);
-
+		scan.close();
 		int indice = 0;
 		while (indice < repeticiones && !error) {
 			if ("vertical".equalsIgnoreCase(direccion)) {
@@ -44,7 +44,7 @@ public class EscribirSimbolo {
 		}
 		indice++;
 
-		scan.close();
+		
 
 	}
 }
