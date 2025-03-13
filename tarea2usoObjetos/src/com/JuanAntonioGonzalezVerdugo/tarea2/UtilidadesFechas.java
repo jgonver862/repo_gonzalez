@@ -67,6 +67,11 @@ public class UtilidadesFechas {
 	}
 
 	public static String parsearFecha(Calendar FechaNow) {
+		String dia = "";
+		switch (FechaNow.get(Calendar.DAY_OF_WEEK)) {
+		
+		
+		
 		Scanner scan = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
 		LocalDate FechaActualizada = LocalDate.now();
@@ -77,8 +82,8 @@ public class UtilidadesFechas {
 			Date fechaActualizadaDate = sdf.parse(FechaTotal);
 			Calendar FechaActualizada2 = Calendar.getInstance();
 			FechaActualizada2.setTime(fechaActualizadaDate);
-			System.out.println("Es El Dia : " + FechaTotal + " " + FechaActualizada.getDayOfWeek() + " "
-					+ HoraActualizada.getHour() + ":" + HoraActualizada.getMinute());
+			System.out.println("Es El Dia : " + FechaTotal + " " + dia + " "
+					+ HoraActualizada.getHour() + ":" + HoraActualizada.getMinute() + ":" + HoraActualizada.getSecond());
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
@@ -106,4 +111,6 @@ public class UtilidadesFechas {
 		return Fecha;
 	}
 
+	
+	
 }

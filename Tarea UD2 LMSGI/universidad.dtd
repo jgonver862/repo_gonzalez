@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE universidad [
+<!ELEMENT universidad(alumno, profesor+)>
+<!ELEMENT alumno (dni, Nombre, Apellido1, Apellido2, Apellido, fechaNacimiento, DireccionPostal, telefonos, cuentascorreo, asignaturas)>
+<!ELEMENT dni (#PCDATA)>
+<!ATTLIST dni Nacionalidad CDATA #REQUIRED>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Apellido1 ANY>
+<!ELEMENT Apellido2 ANY>
+<!ELEMENT Apellido ANY>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+<!ELEMENT DireccionPostal (#PCDATA)>
+<!ELEMENT telefonos (telefono+)>
+<!ELEMENT telefono (#PCDATA)>
+<!ATTLIST telefono tipo CDATA #REQUIRED>
+<!ELEMENT cuentascorreo (cuentacorreo+)>
+<!ELEMENT cuentacorreo (#PCDATA)>
+<!ATTLIST cuentacorreo tipo CDATA #REQUIRED>
+<!ELEMENT asignaturas (asignatura)>
+<!ELEMENT asignatura (NumeroCreditos, Carrera, Curso, Nota)>
+<!ATTLIST asignatura codigo CDATA (#REQUIRED)>
+<!ELEMENT NumeroCreditos (#PCDATA)>
+<!ELEMENT Carrera (#PCDATA)>
+<!ELEMENT Curso (#PCDATA)>
+<!ATTLIST Curso tipo CDATA (#REQUIRED)>
+<!ELEMENT Nota (#PCDATA)>
+<!ELEMENT profesor (dni, Nombre, Apellido1, Apellido2, Apellido, fechaNacimiento, DireccionPostal, telefonos, cuentascorreo, despacho)>
+<!ELEMENT despacho (#PCDATA)>
+]>

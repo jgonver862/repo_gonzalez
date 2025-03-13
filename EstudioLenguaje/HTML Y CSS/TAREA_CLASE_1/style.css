@@ -1,0 +1,53 @@
+.Titulo{
+    text-transform: uppercase;
+    color: white;
+    text-shadow: black;
+    text-align: left;
+}
+
+.p{
+    text-align: auto;
+}
+
+.Fondo{
+    background-color: green;
+    font-family: sans-serif;
+    font-size: left;
+}
+
+.Intro{
+    border: 1.25ch solid black;
+    border-radius: 5ch;
+    margin-left: 50ch;
+    margin-right: 50ch;
+    padding: 2.5ch;
+    background-color: white;
+}
+
+.Parrafo1{
+    border: 7.5px solid maroon;
+    border-top-left-radius: 7.5ch;
+    border-bottom-left-radius: 7.5ch;
+    margin-right: 75ch;
+    padding: 1ch;
+    background-color: coral;
+    color: white;
+}
+
+.Parrafo2{
+    border: ;
+    border-top-right-radius: ;
+    border-bottom-right-radius: ;
+    margin-left: ;
+    padding: ;
+    background-color: ;
+    color: ;
+}
+
+.Parrafo3{
+    border: ;
+    margin-left: ;
+    padding: ;
+    background-color: ;
+    color: ;
+}

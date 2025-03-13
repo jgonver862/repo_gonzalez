@@ -1,0 +1,19 @@
+.Parrafo1{
+    size: 10px; 
+    text-align: center;
+}
+.Parrafo2{
+    size: 12px; 
+    color: blue;
+}
+.Parrafo3{
+    background-color: black; 
+    color: white; 
+    size: 15px;
+}
+.Parrafo4{
+    font-style: italic;
+}
+.Encabezado{
+    color: red; font-size: x-large;
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="tienda">
+    <xs:complexType>
+        <xs:attribute name="id" use="required">
+            <xs:attribute name="apertura" use="optional">
+                <xs:attribute name="alta_datos" use="optional">
+                    <xs:sequence>
+                        <xs:element name="nombre_t">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:length value="20">
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="dueno">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="nombre_d" type="xs:string"/>
+                                    <xs:element name="dni">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[0-9]{8}|[A-Z]">
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="contacto">
+                                        <xs:complexType>
+                                            <xs:all>
+                                                <xs:element name="tlf">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:pattern value="[6-9]|[0-9]{8}">
+                                                        </xs:restriction>
+                                                    </simpleType>
+                                                </xs:element>
+                                            </xs:all>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="direccion" type="xs:string"/>
+                                    <xs:element name="oficina" type="xs:string"/>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="almacen">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="stock">
+                                        <xs:complexType>
+                                            <xs:attribute name="cod" use="required">
+                                                <xs:attribute name="tipo" use="required">
+                                                    <xs:sequence>
+                                                        <xs:element name="cantidad" type="xs:integer"/>
+                                                        <xs:element name="precio" type="xs:double"/>
+                                                        <xs:element name="moneda">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:enumeration value="EU">
+                                                                    <xs:enumeration value="DOL">
+                                                                </xs:restriction>
+                                                            <xs:simpleType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                </xs:attribute>
+                                            </xs:attribute>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="socios">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="socio">
+                                        <xs:complexType>
+                                            <xs:attribute name="num" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:pattern value="[0-9]{3}|[a-z]|-|[A-Z]{3}|-|[0-9]{4}">
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="registro" use="required">
+                                                <xs:sequence>
+                                                    <xs:element name="nombre_s" type="xs:string"/>
+                                                    <xs:element name="reservas">
+                                                        <xs:complexType>
+                                                            <xs:all>
+                                                                <xs:element name="reserva">
+                                                                    <xs:simpleType>
+                                                                        <xs:attribute name="cod_r" use="required">
+                                                                            <xs:attribute name="referencia" use="required"/>
+                                                                        </xs:attribute>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                            </xs:all>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="telefono">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern value="[6-9]|[0-9]{8}">
+                                                            </xs:restriction>
+                                                        </simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:attribute>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:attribute>
+            </xs:attribute>
+        </xs:attribute>
+    </xs:complexType>
+</xs:element>

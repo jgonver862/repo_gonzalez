@@ -4,6 +4,7 @@
 <!ELEMENT saludo (#PCDATA)>
 <!ATTLIST saludo idioma (ALE | FRA | ITA | POR)>
 ]>
+
 <saludos>
     <saludo idioma="ALE">Hallo</saludo>
     <saludo>Hola</saludo>

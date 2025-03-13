@@ -1,0 +1,238 @@
+/*
+2. Estudia la librería StringUtils de apache. Escoge 3 métodos que te parezcan útiles para el trabajo con cadenas. Explica qué hace en los comentarios y pon un ejemplo de uso que ayude a comprenderlo.
+
+IsEmpty
+El metodo IsEmpty comprueba si la variable String contiene texto o esta vacio.
+public static boolean isEmpty(CharSequence cs){
+ StringUtils.isEmpty(null)      = true
+ StringUtils.isEmpty("ABC")	= false
+ StringUtils.isEmpty("")        = true
+ StringUtils.isEmpty("  BCDE  ")= false	
+}
+
+IsAlpha
+El metodo IsAlpha comprueba los caracteres de un String. Solo permite Letras.
+public static boolean isAlpha(CharSequence cs){
+ StringUtils.isAlpha(null)   = false
+ StringUtils.isAlpha("DVD")  = true
+ StringUtils.isAlpha("F2P")  = false
+ StringUtils.isAlpha("")     = false
+}
+
+ContainsAny
+El metodo ContainsAny comprueba si contiene alguno de esos caracteres.
+public static boolean containsAny(CharSequence cs, char... searchChars){
+ StringUtils.containsAny(null, *)               = false
+ StringUtils.containsAny("", *)                 = false
+ StringUtils.containsAny("zzabyycdxx", ['b', 'y']) = true
+ StringUtils.containsAny("zzabyycdxx", ['x', 'd']) = true
+ StringUtils.containsAny("aba", ['x'])             = false
+}
+*/
+
+
+
+
+
+
+/*
+
+4. Estudia la clase StringBuilder y comprende cómo funciona.
+Echa un vistazo a los métodos:
+
+1. append(String str)
+El metodo append sirve para meter diversos valores al final de un objeto.
+Por Ejemplo:
+
+	New StringBuilder().append("Hola ").append(nombreusuario).append(10).toString();
+
+Esto Seria Igual Que:
+
+	String cadena1= "Hola ";
+	String nombreusuario = scan.nextLine();
+	int valor = 10;
+	String str = cadena1 + nombreusuario + valor;
+
+2. insert(int offset, String str)
+El metodo insert sirve para meter un mensaje en un caracter especifico.
+Por Ejemplo:
+
+public class Ejemplo {
+  public static void main(String[] args)
+  {
+    StringBuilder str = new StringBuilder("¡Hola Mundo!");
+    System.out.println(str.toString());
+    str.insert(7, "Para El ");
+    System.out.println(str.toString());
+  }
+}
+
+El Mensaje Que Muestra es: ¡Hola Para El Mundo!
+
+
+3. delete(int start, int end)
+El Metodo delete sirve para eliminar un caracter indicado.
+Por Ejemplo
+
+public class Ejemplo {
+  public static void main(String[] args)
+  {
+    StringBuilder str = new StringBuilder("¡Hola Mundo!");
+    System.out.println(str.toString());
+    str.delete(7);
+    System.out.println(str.toString());
+  }
+}
+
+El Mensaje Que Muestra es: "¡HolaMundo!"
+
+
+4. reverse()
+
+
+  public static void main(String[] args)
+  {
+    StringBuilder str = new StringBuilder("¡Hola Mundo!");
+    System.out.println(str.toString());
+    str.reverse();
+    System.out.println(str.toString());
+  }
+}
+
+
+
+
+5. toString()
+
+El Metodo toString Sirve Para Imprimir El Mensaje Que Se Ha Introducido.
+Por Ejemplo: 
+	    StringBuilder str = new StringBuilder("¡Hola Mundo!");
+    	    System.out.println(str.toString());
+
+
+6. length()
+Devuelve El Numero De Caracteres.
+Por ejemplo:
+
+public static void main(String args[]) {
+
+        StringBuilder bufer = new StringBuilder("Hola, cómo estás?");
+	System.out.println("La Frase (" + bufer + ") tiene " + bufer.length() + " caracteres.");
+    }
+} 
+
+7. charAt(int index)
+Devuelve el caracter que indica en el index
+Por ejemplo:
+
+	StringBuilder bufer = new StringBuilder("Hola, cómo estás?");
+	System.out.println("El caracter en el indice 0 es '" + bufer.charAt(0) + "'");
+	
+
+8. replace(int start, int end, String str)
+Se utiliza para reemplazar los caracteres de una subcadena de esta secuencia por caracteres de la cadena especificada.
+Por ejemplo:
+		StringBuilder str = new StringBuilder("¡Hola Mundo!");
+		StringBuilder strReturn = str.replace(1, 4, "Buenos Dias ");
+		System.out.println(strReturn.toString());
+
+
+
+9. substring(int start)
+Devuelve una subcadena que comienza desde el índice start y se extiende hasta el final de esta secuencia. 
+Por ejemplo:
+	StringBuilder str = new StringBuilder("¡Hola Mundo!");
+	System.out.println(str.substring(6)); 
+	
+
+
+10. substring(int start, int end)
+Devuelve una subcadena que comienza desde el índice start y se extiende hasta el índice end-1 de esta secuencia.
+Por ejemplo:
+	StringBuilder str = new StringBuilder("¡Hola Mundo!");
+	System.out.println(str.substring(1, 5)); 
+*/
+
+
+/*
+5. Estudia la librería Arrays de java.util. Explica al menos los siguientes métodos.
+
+- sort(T[] a)
+Ordena el array.
+
+import java.util.Arrays;
+public class ArraySort {
+ 
+    public static void main(String[] args) {
+        int num[]={8, 10, 15, 20, 21, 25, 30, 32, 40, 41};
+	System.out.println(Arrays.sort(num));
+	}
+}
+
+- binarySearch(T[] a, T key)
+Busca en qué posición del array datos se encuentra la clave dada. El array debe estar ordenado.
+
+import java.util.Arrays;
+public class ArrayBinarySearch {
+ 
+    public static void main(String[] args) {
+        int num[]={9, 20, 25, 30, 21, 55, 60, 62, 90, 91};
+        System.out.println(Arrays.binarySearch(num, 21));
+	}
+}
+
+- equals(T[] a, T[] a2)
+Comprueba si los arrays son idénticos, comprobando valores primitivos (==) y referencias (con equals).
+
+import java.util.Arrays;
+public class ArrayEquals {
+ 
+    public static void main(String[] args) {
+        int num[]={8, 10, 15, 20, 21, 25, 30, 32, 40, 41};
+	int num2[]=Arrays.copyOf(num, 4);
+	System.out.println(Arrays.equals(num, num2))
+	}
+}
+
+- fill(T[] a, T val)
+Completa el array con el valor indicado: todos los elementos iguales.
+
+import java.util.Arrays;
+public class ArrayFill {
+ 
+    public static void main(String[] args) {
+        int num[]={9, 20, 25, 30, 21, 55, 60, 62, 90, 91};
+        Arrays.fill(num, 5);
+	}
+}
+
+- copyOf(T[] original, int newLength)
+Genera una copia de los datos. Si n es mayor que datos.length, rellena con null. Si n es menor que datos.length, se ignora el exceso.
+
+import java.util.Arrays;
+public class ArrayCopyOf {
+ 
+    public static void main(String[] args) {
+        int num[]={8, 10, 15, 20, 21, 25, 30, 32, 40, 41};
+	int num2[]=Arrays.copyOf(num, 4);
+	}
+}
+
+- toString(T[] a)
+Genera una cadena para impresión.
+
+import java.util.Arrays;
+public class ArrayToString {
+ 
+    public static void main(String[] args) {
+        int num[]={9, 20, 25, 30, 21, 55, 60, 62, 90, 91};
+	System.out.println(Arrays.toString(num));
+    }
+}
+
+
+
+
+
+
+*/

@@ -28,7 +28,7 @@ public class UtilidadesMatematicas {
 		int NumeroF = scan.nextInt();
 		System.out.println("Introduce Hasta Que Numero Quieres Hacer El Factorial.");
 		int Factorial = scan.nextInt();
-		for (int contador = 1; contador <= Factorial; contador++) {
+		for (int contador = 1; contador < Factorial; contador++) {
 			NumeroF = NumeroF * contador;
 			System.out.println(NumeroF + " x " + contador + " = " + NumeroF);
 		}
